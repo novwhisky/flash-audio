@@ -1,13 +1,28 @@
 {
-    "name": "flash-audio",
-    "description": "simple polyfill to pipe audio back for old browsers",
-    "version": "0.0.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/wittnl/flash-audio.git"
-    },
-    "devDependencies": {
-        "mxmlc": "0.0.7",
-        "flex-sdk": "^4.6.0-0"
-    }
+  "name": "flash-audio",
+  "description": "simple polyfill to pipe audio back for old browsers",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wittnl/flash-audio.git"
+  },
+  "devDependencies": {
+    "flex-sdk": "^4.6.0-0"
+  },
+  "bugs": {
+    "url": "https://github.com/wittnl/flash-audio/issues"
+  },
+  "homepage": "https://github.com/wittnl/flash-audio",
+  "main": "build.js",
+  "scripts": {
+    "preinstall": "npm i -g mxmlc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "flash",
+    "audio",
+    "polyfill"
+  ],
+  "author": "Nathan Witt <wittnl@gmail.com> (http://wi.tt/)",
+  "license": "MIT"
 }
