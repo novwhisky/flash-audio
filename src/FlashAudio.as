@@ -1,4 +1,4 @@
-﻿package src {
+﻿package {
 	
 	import flash.display.MovieClip;	
 	import flash.external.ExternalInterface;
@@ -23,7 +23,7 @@
 			if(ExternalInterface.available === true) {
 				ExternalInterface.addCallback('playSound', playSound);
 				ExternalInterface.addCallback('stopSound', stopSound);
-				ExternalInterface.addCallback('ready', function() { return true; });
+				ExternalInterface.addCallback('ready', function():Boolean { return true; });
 			}else{
 				throw new Error("ExternalInterface unavailable, can't reach JavaScript!");
 			}
@@ -38,7 +38,7 @@
 		}
 
 		
-		public function playSound(url:String) {
+		public function playSound(url:String):void {
 			if(cache.hasOwnProperty(url)) {
 				cache[url].play();
 			}else{
@@ -49,7 +49,7 @@
 		}
 		
 		public function stopSound():void {
-			for each(var url in cache) {
+			for each(var url:String in cache) {
 				cache[url].close();
 			}
 		}
