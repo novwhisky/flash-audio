@@ -1,0 +1,9 @@
+{
+    name: "flash-audio",
+    description: "simple polyfill to pipe audio back for old browsers",
+    "version": "0.0.0",
+    "devDependencies": {
+        "mxmlc": "0.0.7",
+        "flex-sdk": "^4.6.0-0"
+    }
+}
