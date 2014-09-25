@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>flash-audio</title>
+    <style type="text/css" media="screen">
+        html, body { height:100%; background-color: #ffffff;}
+        body { margin:0; padding:0; overflow:hidden; }
+    </style>
+</head>
+<body>
+    <object type="application/x-shockwave-flash" data="flash-audio.swf" width="10" height="10" id="flash-audio" style="float: none; vertical-align:middle">
+        <param name="movie" value="flash-audio.swf" />
+    </object>
+<script type="text/javascript">
+    var f = document.getElementById("flash-audio");
+    window.addEventListener('load', function(e) {
+        f.playSound("test.mp3");
+    });
+</script>
+</body>
+</html>
